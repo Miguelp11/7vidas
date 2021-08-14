@@ -1,0 +1,457 @@
+/* ESTILOS GLOBALES */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+
+/* PAGINA DE INICIO */
+.navegacion{
+    background-color: #2F5D62;
+}
+.navegacion__menu{
+    margin: 10px 10px 0px 10px;
+    padding: 7px 10px 5px;
+    display: inline-block;
+    border: 2px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.fa-bars{
+    font-size: 30px;
+    color: #fff;
+}
+.navegacion__logo{
+    position: absolute;
+    top: 5px;
+    left: 40%;
+}
+.navegacion__logo--tamano{
+    width: 60px;
+}
+.navegacion__menuLista{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 10px 10px;
+    max-height: 0;
+    transition: max-height .4s linear;
+    overflow: hidden;
+}
+.navegacion__menuLista li{
+    text-align: center;
+    border-bottom: 1px solid #000;
+    transition: all .4s linear;
+}
+.navegacion__menuLista li:last-child{
+    margin-bottom: 10px;
+}
+.navegacion__menuLista li:hover{
+    background-color: #234246;
+}
+.navegacion__menuLista li a{
+    text-decoration: none;
+    color: #fff;
+}
+.desplegar{
+    max-height: 110px;
+}
+.activo{
+    background-color: #234246;
+}
+/* banner */
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100vh;
+    margin-top: -10px;
+    background-image: url(../images/banner1.jpg);
+    background-image: -moz-linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) ), url(../images/banner1.jpg);
+    background-image: -webkit-linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) ), url(../images/banner1.jpg);
+    background-image: -ms-linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) ), url(../images/banner1.jpg);
+    background-image: -o-linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) ), url(../images/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.banner h1{
+    font-size: 20px;
+    text-align: center;
+}
+.banner span{
+    color: #2F5D62;
+}
+.marco{
+    max-width: 90%;
+    margin: 0px auto;
+    padding: 10px 0;
+    text-align: center;
+}
+.marco p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+}
+.linea{
+    width: 70px;
+    height: 3px;
+    margin: 0 auto;
+    background-color: #234246;
+}
+.principal h2,h3, .voluntarios h2, .nosotros h2{
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+    text-align: center;
+}
+.voluntarios{
+    background-color: #A7C4BC;
+}
+.nosotros{
+    background-color: #DFEEEA;
+}
+.voluntarios a, .nosotros a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #3d534d;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+    transition: all .2s linear;
+}
+.voluntarios a:hover, .nosotros a:hover{
+    color: #3d534d;
+    background-color: #fff;
+}
+footer{
+    background-color: #234246;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+footer h4{
+    font-size: 14px;
+    color: #6d8b83;
+}
+footer a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    transition: all .4s linear;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: #A7C4BC;
+}
+footer span{
+    color: #A7C4BC;
+}
+footer p{
+    font-size: 10px;
+    margin: 5px;
+    border-top: 1px solid #000;
+}
+.redesSociales .fab{
+    font-size: 22px;
+    transition: color .2s linear;
+}
+.redesSociales .fab:hover{
+    color: #000;
+}
+.fa-facebook-square{
+    color: #3b5998;
+}
+.fa-twitter-square{
+    color: #55acee;
+}
+.fa-instagram-square{
+    color: #ff0084;
+}
+/* PAGINA VOLUNTARIOS */
+.banner1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100vh;
+    margin-top: -10px;
+    background-image: url(../images/banner1.jpg);
+    background-image: -moz-linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) ), url(../images/banner2.jpg);
+    background-image: -webkit-linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) ), url(../images/banner2.jpg);
+    background-image: -ms-linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) ), url(../images/banner2.jpg);
+    background-image: -o-linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) ), url(../images/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.banner1 h1{
+    font-size: 20px;
+    text-align: center;
+}
+.banner1 span{
+    color: #2F5D62;
+}
+form{
+    max-width: 320px;
+    margin: 0 auto;
+    border: 2px solid #234246;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 20px 0;
+}
+form label{
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+}
+form input[type="text"],input[type="tel"], input[type="email"] {
+    padding: 5px;
+    width: 160px;
+    height: 25px;
+    border: 1px solid #234246;
+    border-radius: 10px;
+}
+form input:focus, textarea:focus{
+    outline: none;
+}
+form textarea{
+    padding: 5px;
+    width: 160px;
+    height: 50px;
+    resize: none;
+    vertical-align: top;   
+    border: 1px solid #234246;
+    border-radius: 10px; 
+}
+input[type="submit"]{
+    border: none;
+    background-color:#2a9c7e;
+    border-radius: 10px;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all .4s linear;
+}
+input[type="submit"]:hover{
+    background-color: #2F5D62;
+}
+
+/* PAGINA NOSOTROS */
+.banner2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100vh;
+    margin-top: -10px;
+    background-image: url(../images/banner1.jpg);
+    background-image: -moz-linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) ), url(../images/banner3.jpg);
+    background-image: -webkit-linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) ), url(../images/banner3.jpg);
+    background-image: -ms-linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) ), url(../images/banner3.jpg);
+    background-image: -o-linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) ), url(../images/banner3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.banner2 h1{
+    font-size: 20px;
+    text-align: center;
+}
+.banner2 span{
+    color: #2F5D62;
+}
+.marco1{
+    border: 2px solid #234246;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 0 10px;
+}
+.marco__nosotrosContenedor{
+    max-width: 190px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px;
+    -webkit-box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.55);
+    box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.55);
+}
+.marco__nosotrosContenedor p{
+    text-align: center;
+}
+.marco__nosotros--img{
+    width: 100px;
+}
+
+
+/* PAGINA CONTACTO */
+.banner3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100vh;
+    margin-top: -10px;
+    background-image: url(../images/banner1.jpg);
+    background-image: -moz-linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) ), url(../images/banner4.jpg);
+    background-image: -webkit-linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) ), url(../images/banner4.jpg);
+    background-image: -ms-linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) ), url(../images/banner4.jpg);
+    background-image: -o-linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) ), url(../images/banner4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.banner3 h1{
+    font-size: 20px;
+    text-align: center;
+}
+.banner3 span{
+    color: #2F5D62;
+}
+.principal__columna1 .fab{
+    font-size: 34px;
+    transition: all .4s linear;
+}
+.principal__columna1 .fab:hover{
+    color: #000;    
+}
+
+/* Inicio responsivo  */
+@media screen and (min-width:480px) {
+    .marco{
+        padding: 0 15px;
+    }
+    .marco__contenedor{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .marco__columna1, .marco__columna2{
+        padding: 0 10px;
+
+    }
+    .principal, .voluntarios, .nosotros {
+        padding: 10px 0;
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer p{
+        width: 100%;
+    }
+    /* contacto */
+    .principal__columna1 .fab{
+        font-size: 40px;
+    }
+    /* nosotros */
+    .marco__nosotros{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 15px 0;
+    }
+    .marco__nosotrosContenedor{
+        width: 50%;
+    }
+
+}
+@media screen and (min-width:768px) {
+    .banner h1, .banner1 h1, .banner2 h1, .banner3 h1{
+        font-size: 24px;
+    }
+    .marco p{
+        font-size: 16px;
+    }
+    footer a{
+        font-size: 14px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    .redesSociales .fab{
+        font-size: 26px;
+    }
+    /* voluntarios ty contacto*/
+    .principal__contenedor{
+        display: flex;
+        justify-content: space-around;
+        padding: 15px 0;
+    }
+    .principal__columna1{
+        width: 40%;
+    }
+    .principal__columna2 form{
+        padding: 10px 20px;
+    }
+    /* nosotros */
+    .marco__nosotrosContenedor{
+        width: 25%;
+    }
+
+}
+@media screen and (min-width: 1024px) {
+    .navegacion{
+        height: 85px;
+        margin-top: -10px;
+    }
+    .navegacion__logo{
+        top: 0;
+        left: 10px;
+    }
+    .navegacion__logo--tamano{
+        width: 70px;
+    }
+    .navegacion__menu{
+        display: none;
+    }
+    .navegacion__menuLista{
+        overflow: visible;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 40px;
+    }
+    .navegacion__menuLista li{
+        border-bottom: none;
+        height: 75px;
+    }
+    .navegacion__menuLista li:hover{
+        border-left: 1px solid #3b5998;
+        border-right: 1px solid #3b5998;
+    }
+    .navegacion__menuLista li a{
+        display: inline-block;
+        padding: 25px 5px 25px 5px;
+        width: 100px;
+    }
+    .marco{
+        max-width: 1000px;
+    }
+    .banner h1, .banner1 h1, .banner2 h1, .banner3 h1{
+        font-size: 32px;
+    }
+    .principal h2,h3, .voluntarios h2, .nosotros h2{
+        font-size: 22px;
+    }
+    footer{
+        justify-content: space-around;
+    }
+    footer p{
+        border-top: none;
+    }
+    /* voluntarios y contacto */
+    .principal__columna2 form {
+        max-width: 480px;
+        padding: 10px 40px;
+    }
+    .principal__columna1 .fab{
+        font-size: 54px;
+    }
+}
