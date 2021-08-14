@@ -28,10 +28,10 @@
                 
             </div>
                 <ul class="navegacion__menuLista" id="menu"> 
-                    <li class="activo"><a href="/">Inicio</a></li>
-                    <li><a href="voluntarios">Voluntarios</a></li>
-                    <li><a href="nosotros">Nosotros</a></li>
-                    <li><a href="contacto">Contacto</a></li>
+                    <li class="{{#if inicio}} activo {{/if}} "><a href="/">Inicio</a></li>
+                    <li class="{{#if voluntarios}} activo {{/if}} "><a href="voluntarios">Voluntarios</a></li>
+                    <li class="{{#if nosotros}} activo {{/if}} "><a href="nosotros">Nosotros</a></li>
+                    <li class="{{#if contacto}} activo {{/if}} "><a href="contacto">Contacto</a></li>
                 </ul>
         </nav>
     </header>
