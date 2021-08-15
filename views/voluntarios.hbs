@@ -14,46 +14,47 @@
                 </div>
                 <div class="principal__columna2">
                     <h3>Completa el formulario con tus datos</h3>
-                    <form action="">
+                    <form action="/voluntarios" method="POST">
                         <p>
                             <label for="nombre">Nombre(s):</label>
-                            <input type="text" name="" id="nombre" maxlength="20" placeholder="Nombres" required>
+                            <input type="text" name="nombre" id="nombre" maxlength="20" placeholder="Nombres" required>
                         </p>
                         <p>
                             <label for="apellido">Apellidos:</label>
-                            <input type="text" name="" id="apellido" maxlength="20" placeholder="Apellidos" required>
+                            <input type="text" name="apellidos" id="apellido" maxlength="20" placeholder="Apellidos" required>
                         </p>
                         <p>
                             <label for="correo">Correo:</label>
-                            <input type="email" name="" id="correo" maxlength="20" placeholder="correo@dominio.com" required>
+                            <input type="email" name="correo" id="correo" maxlength="20" placeholder="correo@dominio.com" required>
                         </p>
                         <p>
                             <label for="telefono">Teléfono:</label>
-                            <input type="tel" name="" id="telefono" placeholder="10 dígitos" maxlength="10" required>
+                            <input type="tel" name="telefono" id="telefono" placeholder="10 dígitos" maxlength="10" required>
                         </p>
                         <p>Selecciona donde quieres apoyar</p>
                         <p>
                             <label for="">Rescate</label>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="apoyo" value="Rescate" id="">
                         </p>
                         <p>
                             <label for="">Brigadas</label>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="apoyo" value="Brigadas" id="">
                         </p>
                         <p>
                             <label for="">Cuidado</label>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="apoyo" value="Cuidado" id="">
                         </p>
                         <p>
                             <label for="">Alimentos</label>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="apoyo" value="Alimentos" id="">
                         </p>
                         <p>
                             <label for="">Refugio</label>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="apoyo" value="Refugio" id="">
                         </p>
                         <input type="submit" value="Enviar Registro" id="enviar">
                     </form>
+                    <p class="envio">{{confirmacion}} </p>
                 </div>
             </div>
         </div>
