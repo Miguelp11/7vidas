@@ -10,9 +10,9 @@ menuHamburguesa.addEventListener('click', function(){
 });
 
 //boton formulario
-let boton= document.getElementById('enviar');
+// let boton= document.getElementById('enviar');
 
-boton.addEventListener('click', function(e){
-    e.preventDefault();
-    alert("Ups!!, esto aun no funciona...");
-});
+// boton.addEventListener('click', function(e){
+//     e.preventDefault();
+//     alert("Ups!!, esto aun no funciona...");
+// });
