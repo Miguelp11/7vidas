@@ -321,6 +321,13 @@ input[type="submit"]:hover{
 .principal__columna1 .fab:hover{
     color: #000;    
 }
+.envio{
+    display: inline-block;
+    color: green;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    width: 280px;
+}
 
 /* Inicio responsivo  */
 @media screen and (min-width:480px) {

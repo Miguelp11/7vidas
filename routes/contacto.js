@@ -35,7 +35,7 @@ router.post('/', async(req, res, next)=>{
   var info = await transport.sendMail(cuerpoCorreo);
 
   res.render('contacto', {
-    confirmacion: "Su mensaje fue enviado correctamente, pronto nos comunicaremos con usted"
+    confirmacion: "📩 Su mensaje fue enviado correctamente, pronto nos comunicaremos con usted."
   });
 
 });
